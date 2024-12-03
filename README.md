@@ -15,3 +15,6 @@ Objectives
 - **Centrality analysis**: The project includes tools for analyzing article centrality within the graph, such as degree centrality, to identify the most influential articles.
 - **Community detection**: Algorithms for community detection (e.g., the greedy modularity algorithm) are employed to identify groups of articles that are strongly interconnected.
 - **Visualization**: The graph is visualized with nodes colored by publication year and sized proportionally to their number of connections (degree).
+
+## Example
+![Graph Visualization Example](exemple_graphe.png)
