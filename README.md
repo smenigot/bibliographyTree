@@ -16,5 +16,11 @@ Objectives
 - **Community detection**: Algorithms for community detection (e.g., the greedy modularity algorithm) are employed to identify groups of articles that are strongly interconnected.
 - **Visualization**: The graph is visualized with nodes colored by publication year and sized proportionally to their number of connections (degree).
 
+## Files
+
+- arbre_genealogique_papier_avec_filtrage.ipynb: Creates a historical graph for a specific article (identified by its DOI) while filtering journals based on their category. This is useful for narrowing the graph to specific areas of interest.
+- arbre_genealogique_papier_sans_filtrage.ipynb: Creates a historical graph for a specific article (identified by its DOI) without applying any journal category filters, generating a broader graph.
+- recherche_articles_par_motscles_et_par_categories.py: The main script for creating a graph of relationships between multiple articles based on keywords and journal categories.
+
 ## Example
 ![Graph Visualization Example](exemple_graphe.png)
