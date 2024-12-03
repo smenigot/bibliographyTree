@@ -1,24 +1,17 @@
-# bibliographyTree : Analyse de Graphes d'Articles Scientifiques
+# bibliographyTree: Graph Analysis of Scientific Articles
 
-Ce projet permet de créer et d'analyser un graphe de relations entre articles scientifiques à partir de mots-clés et de catégories de journaux. Le graphe est construit en utilisant des métadonnées d'articles comme les DOI (identifiants d'articles), leurs titres, auteurs, années de publication et journaux. Les relations entre les articles sont extraites à partir de leurs références bibliographiques et citations.
+This project facilitates the creation and analysis of a graph representing relationships between scientific articles based on keywords and journal categories. The graph is constructed using article metadata such as DOIs (article identifiers), titles, authors, publication years, and journals. Relationships between articles are derived from their bibliographic references and citations.
+Objectives
 
-## Objectifs
+## The main goals of this project are to:
 
-L'objectif principal de ce projet est de :
+- **Build a directed graph** based on scientific articles, where nodes represent articles, and edges depict relationships between them (references and citations).
+- **Analyze the graph** to detect article communities, identify the most central articles using various metrics (e.g., degree centrality), and visualize these relationships.
 
-- **Construire un graphe dirigé** basé sur les articles scientifiques, où les nœuds sont les articles et les arêtes représentent les relations entre ces articles (références et citations).
-- **Analyser ce graphe** pour détecter des communautés d'articles, identifier les articles les plus centraux selon diverses métriques (comme la centralité de degré), et visualiser ces relations.
+## Features
 
-## Fonctionnalités
-
-- **Création du graphe** : À partir d'une liste de DOI et des métadonnées associées, le graphe des relations entre les articles est construit. Les articles sont reliés par des arêtes basées sur leurs citations et références bibliographiques.
-  
-- **Filtrage par mots-clés et catégories de journaux** : Le graphe peut être construit en sélectionnant des articles en fonction de mots-clés ou de catégories spécifiques de journaux.
-
-- **Analyse de centralité** : Le projet offre des outils pour analyser la centralité des articles dans le graphe, par exemple, la centralité de degré, permettant d'identifier les articles les plus influents.
-
-- **Détection de communautés** : Utilisation d'algorithmes de détection de communautés (comme l'algorithme de modularité glouton) pour identifier des groupes d'articles qui sont fortement interconnectés.
-
-- **Visualisation** : Le graphe est visualisé avec des nœuds colorés en fonction de l'année de publication, et des tailles proportionnelles à leur nombre de connexions (degré).
-
-
+- **Graph construction**: Using a list of DOIs and associated metadata, a graph of relationships between articles is created. Articles are linked via edges based on their citations and bibliographic references.
+- **Filtering by keywords and journal categories**: The graph can be built by selecting articles based on specific keywords or journal categories.
+- **Centrality analysis**: The project includes tools for analyzing article centrality within the graph, such as degree centrality, to identify the most influential articles.
+- **Community detection**: Algorithms for community detection (e.g., the greedy modularity algorithm) are employed to identify groups of articles that are strongly interconnected.
+- **Visualization**: The graph is visualized with nodes colored by publication year and sized proportionally to their number of connections (degree).
