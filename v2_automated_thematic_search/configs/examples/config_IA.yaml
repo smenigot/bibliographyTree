@@ -1,0 +1,254 @@
+journals:
+  categories:
+    - "Acoustics and Ultrasonics"
+    - "Applied Mathematics"
+    - "Artificial Intelligence"
+    - "Bioengineering"
+    - "Biomedical Engineering"
+    - "Biophysics"
+    - "Biotechnology"
+    - "Computational Mathematics"
+    - "Computational Mechanics"
+    - "Computational Theory and Mathematics"
+    - "Computer Graphics and Computer-Aided Design"
+    - "Computer Science Applications"
+    - "Computer Science (miscellaneous)"
+    - "Computer Vision and Pattern Recognition"
+    - "Control and Optimization"
+    - "Control and Systems Engineering"
+    - "Decision Sciences (miscellaneous)"
+    - "Electrical and Electronic Engineering"
+    - "Engineering (miscellaneous)"
+    - "Hardware and Architecture"
+    - "Health Informatics"
+    - "Instrumentation"
+    - "Mathematical Physics"
+    - "Mechanical Engineering"
+    - "Modeling and Simulation"
+    - "Numerical Analysis"
+    - "Obstetrics and Gynecology"
+    - "Radiological and Ultrasound Technology"
+    - "Radiology, Nuclear Medicine and Imaging" 
+    - "Signal Processing"
+    - "Software"
+    - "Statistical and Nonlinear Physics"
+    - "Statistics, Probability and Uncertainty"
+    - "Theoretical Computer Science"
+    - "Multidisciplinary"
+  max_article_age_days: 31
+
+filters:
+  title_keywords:
+    include:
+      # --- IA / ML / DL génériques ---
+      - '\bartificial intelligence\b'
+      - '\bAI\b'
+      - 'learning'
+      - 'machine learning'
+      - 'deep learning'
+      - 'representation learning'
+      - 'self[-\s]?supervised'
+      - 'unsupervised'
+      - 'supervised'
+      - 'semi[-\s]?supervised'
+      - 'few[-\s]?shot'
+      - 'meta[-\s]?learning'
+      - 'transfer'
+      - 'continual learning|lifelong learning'
+      # --- Grands modèles / foundation models / LLM ---
+      - 'foundation model(s)?'
+      - 'pre[-\s]?trained'
+      - 'large (language|multimodal)'
+      - '\bLLM(s)?\b'
+      - 'vision[-\s]?language|\bVLM(s)?\b'
+      - 'multimodal'
+      - 'multi[-\s]?modal (learning|generation|reasoning)'
+      # --- Architectures modernes ---
+      - 'transformer(s)?'
+      - 'self[-\s]?attention'
+      - 'multi[-\s]?head attention'
+      - 'encoder[-\s]?decoder'
+      - 'encoder'
+      - 'decoder'
+      - 'state[-\s]?space'
+      - 'Mamba'
+      - 'mixture[-\s]?of[-\s]?experts|\bMoE\b'
+      - 'graph'
+      - 'graph neural network(s)?|\bGNN(s)?\b'
+      - 'graph convolutional|\bGCN(s)?\b'
+      - 'vision transformer(s)?|\bViT(s)?\b'
+      - 'diffusion model(s)?'
+      - 'score[-\s]?based generative model(s)?'
+      - 'normalizing flow(s)?'
+      # --- Couches / techniques de training / PEFT ---
+      - 'residual network(s)?|\bResNet(s)?\b'
+      - 'normalization layer(s)?|layer norm(alization)?|batch norm(alization)?'
+      - 'RMSNorm'
+      - 'dropout'
+      - 'LoRA'
+      - 'low[-\s]?rank adaptation'
+      - 'adapter layer(s)?'
+      - 'fine[-\s]?tuning'
+      - 'instruction tuning'
+      - 'alignment tuning'
+      - 'tuning'
+      # --- Méthodes émergentes LLM : prompting, RAG, outils ---
+      - 'prompt'
+      - 'prompting'
+      - 'in[-\s]?context'
+      - 'chain[-\s]?of[-\s]?thought'
+      - 'tool[-\s]?use'
+      - 'API'
+      - 'retrieval[-\s]?augmented|\bRAG\b'
+      - 'memory[-\s]?augmented'
+      - 'program[-\s]?aided language'
+      # --- RL, RLHF, préférences, optimisation de politiques ---
+      - 'reinforcement'
+      - 'reinforcement learning'
+      - 'deep reinforcement learning'
+      - 'reinforcement learning from human feedback|\bRLHF\b'
+      - 'reinforcement learning from AI feedback|\bRLAIF\b'
+      - 'preference(-based)? optimization'
+      - 'direct preference optimization|\bDPO\b'
+      - 'policy optimization'
+      - 'offline reinforcement learning'
+      - 'bandit algorithm(s)?'
+      # --- Analyse de modèles, évaluation, benchmarks ---
+      - 'benchmark(ing)?'
+      - 'evaluation'
+      - 'robustness'
+      - 'adversarial'
+      - 'hallucination(s)?'
+      - 'context length scaling'
+      - 'scaling law(s)?'
+      - 'emergent behavior(s)?'
+      - 'MMLU'
+      - 'BIG[-\s]?Bench|HELM|TruthfulQA'
+      # --- Interprétabilité, XAI, mécanique interne des modèles ---
+      - 'explainable|\bXAI\b'
+      - 'interpretabilit(y|ies)'
+      - 'mechanistic interpretability'
+      - 'feature attribution'
+      - 'saliency map(s)?'
+      - 'integrated gradients'
+      - '\bGrad-?CAM\b'
+      - '\bSHAP\b'
+      - '\bLIME\b'
+      - 'activation patching'
+      - 'causal tracing'
+      - 'representation geometry'
+      - 'latent space'
+      - 'embedding space'
+      # --- Sécurité, alignement, éthique, impact sociétal ---
+      - 'safety'
+      - 'alignment'
+      - 'alignment of (LLM|foundation model)s?'
+      - 'responsible'
+      - 'trustworthy'
+      - 'governance'
+      - 'regulation'
+      - 'ethics'
+      - 'algorithmic fairness'
+      - 'bias'
+      - 'fairness'
+      - 'society'
+      - 'socio(-| )technical (impact|analysis)'
+      - 'human[-\s]?AI'
+      - 'literacy'
+      # --- Méthodes agentiques, systèmes multi-agents, workflows ---
+      - 'agent(s)?'
+      - 'LLM[-\s]?based agent(s)?'
+      - 'tool[-\s]?using agent(s)?'
+      - 'autonomous agent(s)?'
+      - 'agentic workflow(s)?'
+      - 'agentic'
+      - 'planner[-\s]?executor (architecture|framework)'
+      - 'multi[-\s]?agent'
+      - 'LLM[-\s]?powered (tool|workflow|assistant|copilot)'
+      - 'copilot(s)?'
+      - 'decision support system(s)?'
+      # --- Nouvelles pratiques d’usage, rupture de méthodes ---
+      - 'prompt[-\s]?based learning'
+      - 'instruction[-\s]?following'
+      - 'chatbot(s)?'
+      - 'human[-\s]?in[-\s]?the[-\s]?loop'
+      - 'interactive machine learning'
+      - 'data[-\s]?centric'
+      - 'foundation'
+      - 'AI[-\s]?driven (workflow|pipeline|discovery)'
+    exclude:
+      # --- Applications très spécifiques (santé) où la méthode IA est souvent standard ---
+      - 'breast cancer'
+      - 'lung cancer'
+      - 'brain tumor'
+      - 'COVID-?19'
+      - 'Alzheimer'
+      - 'Parkinson'
+      - 'diabetic retinopathy'
+      - 'pneumonia detection'
+      - 'lesion segmentation'
+      - 'medical diagnosis'
+      - 'disease prediction'
+
+      # --- Applications très spécifiques (industrie / capteurs) déjà couvertes ailleurs ---
+      - 'fault diagnosis'
+      - 'remaining useful life|\bRUL\b'
+      - 'predictive maintenance'
+      - 'tool wear'
+      - 'motor fault'
+      - 'bearing fault'
+      - 'gearbox fault'
+
+      # --- Applications très spécifiques (finance / économie) ---
+      - 'stock market'
+      - 'stock price'
+      - 'credit scoring'
+      - 'loan default prediction'
+      - 'fraud detection'
+      - 'option pricing'
+      - 'cryptocurrency'
+      - 'bitcoin'
+      - 'forex'
+
+      # --- Applications très spécifiques (énergie / météo) ---
+      - 'electric load forecasting'
+      - 'wind power forecasting'
+      - 'solar power forecasting'
+      - 'short[-\s]?term load forecasting'
+
+      # --- Applications fortement ancrées dans un domaine scientifique non IA ---
+      - 'protein folding'
+      - 'drug discovery'
+      - 'molecular dynamics'
+      - 'material(s)? design'
+      - 'materials informatics'
+
+      # --- Vision par ordinateur purement appliquée ---
+      - 'skin lesion classification'
+      - 'retinal image analysis'
+      - 'polyp detection'
+      - 'brain MRI segmentation'
+      - 'chest X[-\s]?ray'
+
+
+llm:
+  domain_description: >
+    General artificial intelligence, machine learning and deep learning, with a focus on new models, architectures and
+    training practices (transformers, diffusion models, foundation models, large language models, multimodal and
+    vision-language models, graph neural networks, mixture-of-experts, state-space models, parameter-efficient
+    fine-tuning, LoRA, adapters, instruction tuning, in-context learning, chain-of-thought, RAG and tool-augmented
+    LLMs). The domain also covers the analysis and evaluation of these models (scaling laws, benchmarks, robustness,
+    hallucinations, out-of-distribution generalization), interpretability and explainable AI (mechanistic
+    interpretability, attribution methods, representation geometry), as well as safety, alignment, fairness,
+    governance and societal impact of AI systems. A significant part of the domain is devoted to agentic approaches
+    (LLM-based agents, tool-using agents, multi-agent systems, planner–executor architectures, AI copilots) and to
+    shifts in practices, workflows and methodologies enabled by modern AI systems. Highly domain-specific applications
+    (e.g. medical diagnosis, fault diagnosis, stock prediction) without methodological innovation in AI are considered
+    out of scope.
+  relevance_threshold: 0.75
+  model_name: "all-MiniLM-L12-v2"
+
+
+pubmed:
+  api_key: ""
+  email: "your.email@example.org"

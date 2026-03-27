@@ -1,0 +1,13 @@
+aiohttp>=3.9
+biopython>=1.84
+feedparser>=6.0
+matplotlib>=3.8
+networkx>=3.3
+numpy>=1.26
+openpyxl>=3.1
+pandas>=2.2
+PyYAML>=6.0
+requests>=2.31
+scikit-learn>=1.5
+sentence-transformers>=3.0
+tqdm>=4.66

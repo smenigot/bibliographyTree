@@ -1,0 +1,34 @@
+# Python environments and caches
+.venv/
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+
+# Local IDE files
+.idea/
+
+# Local configuration files with credentials
+v2_automated_thematic_search/configs/*.yaml
+v2_automated_thematic_search/configs/*.yml
+v3_thematic_bibliometric_analysis/configs/*.yaml
+v3_thematic_bibliometric_analysis/configs/*.yml
+
+# Temporary and generated data for version 2
+v2_automated_thematic_search/temp_journals/
+v2_automated_thematic_search/*_issns_and_titles_snapshot.csv
+v2_automated_thematic_search/*_articles_*.csv
+v2_automated_thematic_search/*_articles_*.xlsx
+v2_automated_thematic_search/*.dedupe.sqlite
+
+# Temporary and generated data for version 3
+v3_thematic_bibliometric_analysis/.review_env/
+v3_thematic_bibliometric_analysis/temp_journals/
+v3_thematic_bibliometric_analysis/review_analysis_output/
+v3_thematic_bibliometric_analysis/*_issns_and_titles_snapshot.csv
+v3_thematic_bibliometric_analysis/*_articles_*.csv
+v3_thematic_bibliometric_analysis/*_articles_*.xlsx
+v3_thematic_bibliometric_analysis/*.dedupe.sqlite
+v3_thematic_bibliometric_analysis/*.bib
+v3_thematic_bibliometric_analysis/mes_doi_resultat*.xlsx
+v3_thematic_bibliometric_analysis/doi_enriched*.xlsx
+v3_thematic_bibliometric_analysis/metadata_cache.json

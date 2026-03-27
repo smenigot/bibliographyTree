@@ -1,0 +1,116 @@
+﻿journals:
+  max_rows_per_issn: 1000
+  categories:
+    - "Acoustics and Ultrasonics"
+    - "Artificial Intelligence"
+    - "Biomedical Engineering"
+    - "Biophysics"
+    - "Decision Sciences (miscellaneous)"
+    - "Electrical and Electronic Engineering"
+    - "Health Informatics"
+    - "Radiological and Ultrasound Technology"
+    - "Radiology, Nuclear Medicine and Imaging"
+    - "Signal Processing"
+    - "Multidisciplinary"
+collection:
+  date_filter:
+    enabled: false
+
+  crossref:
+    enabled: true
+    max_rows_per_issn: 1000
+    max_concurrent_requests: 10
+    global_query:
+      enabled: true
+      bibliographic_queries:
+        - "cerebral microembolus"
+        - "cerebral microemboli"
+        - "cerebral micro-embolus"
+        - "cerebral micro-emboli"
+        - "transcranial doppler"
+    year_windows:
+      enabled: false
+      start_year: 1950
+      end_year: 2026
+      step_years: 1
+
+  hal:
+    enabled: false
+    query: "*:*"
+    rows_per_page: 200
+    max_total_results: 5000
+
+  arxiv:
+    enabled: false
+    query: "(cat:physics* OR cat:math* OR cat:cs* OR cat:stat* OR cat:eess*)"
+    page_size: 100
+    max_total_results: 5000
+
+filters:
+  title_keywords:
+    include:
+      - '(micro[-\s]?emboli(c|s)?|cerebral emboli(c|s)?|embolic signal(s)?|\bMES\b|\bHITS\b)'
+      - '(transcranial|trans[-\s]?cranial|\bTCD\b|\bTCCD\b)'
+      - '(Doppler|ultra(?:sound|sonic))'
+      - '(embol(i|u)s detection|embolic signal detection)'
+      - '(automatic detection|automated detection|event detection)'
+      - '(counting|event counting|embol(i|u)s count|microembol(i|u)s count)'
+      - '(real[-\s]?time detection|online detection)'
+      - '(threshold(ing)?|adaptive threshold)'
+      - '(CFAR|constant false alarm rate)'
+      - '(matched filter(ing)?)'
+      - '(energy detector|envelope detection)'
+      - '(time[-\s]?frequency|wavelet|STFT|spectrogram)'
+      - '(short[-\s]?time Fourier)'
+      - '(artifact rejection|artefact rejection)'
+      - '(artifact removal|artefact removal)'
+      - '(motion artifact(s)?)'
+      - '(probe movement|skull attenuation compensation)'
+      - '(clutter suppression|wall filter)'
+      - '(false positive reduction|false alarm reduction)'
+      - '(noise reduction|denoising)'
+      - '(robust detection)'
+      - '(embol(i|u)s classification|microembol(i|u)s classification)'
+      - '(solid vs gaseous|gaseous embol(i|u)s|solid embol(i|u)s)'
+      - '(air bubble(s)? detection)'
+      - '(feature extraction)'
+      - '(pattern recognition)'
+      - '(machine learning|deep learning|neural network|CNN|SVM|random forest)'
+      - '(supervised|unsupervised|self[-\s]?supervised)'
+      - '(pulsed Doppler|pulse[-\s]?Doppler|\bPW\b)'
+      - '(\bRF\b|radio[-\s]?frequency)'
+      - '(spectral Doppler|Doppler spectrum|power Doppler)'
+      - '(multi[-\s]?(gate|gating)|double[-\s]?gate|dual[-\s]?gate|multi[-\s]?depth)'
+      - '(coded excitation|pulse compression|Barker|chirp|Golay|\bPID\b|phase inversion)'
+      - '(multi[-\s]?frequency|dual[-\s]?frequency)'
+      - '(multi[-\s]?amplitude)'
+      - '(robotic probe|robotized probe)'
+      - '(holter|ambulatory|long[-\s]?term monitoring|continuous monitoring)'
+
+    exclude:
+      - '(embolization|embolisation|embolotherapy|TACE)'
+      - '(endovascular|catheter|coiling|stent[-\s]?graft|microsphere(s)?)'
+      - '(pulmonary embol(ism|i)|deep vein thrombosis|\bDVT\b|\bVTE\b)'
+      - '(\bMRI\b|\bCT\b|\bPET\b|angiograph(y|ic))'
+      - '(case report|systematic review|meta[-\s]?analysis)'
+
+    search_in_title: true
+    search_in_abstract: true
+    use_regex: true
+
+llm:
+  domain_description: >
+    Detection and quantitative analysis of cerebral micro-emboli using transcranial Doppler (TCD/TCCD) ultrasound.
+    The scope includes embolic signal detection (MES, HITS), automatic and real-time counting, artifact rejection
+    (motion, clutter, false alarms), and classification of emboli (e.g., solid vs gaseous). Signal processing methods
+    include RF analysis, spectral/time-frequency analysis, adaptive and CFAR thresholding, matched filtering,
+    pulse compression and coded excitation (Barker, chirp, phase inversion), multi-gate/multifrequency strategies,
+    and machine learning approaches for detection and classification. Purely therapeutic embolization procedures
+    and imaging-only studies are excluded.
+
+  relevance_threshold: 0.0
+  model_name: "all-MiniLM-L12-v2"
+
+pubmed:
+  api_key: ""
+  email: "your.email@example.org"

@@ -1,0 +1,214 @@
+journals:
+  categories:
+    - "Acoustics and Ultrasonics"
+    - "Applied Mathematics"
+    - "Artificial Intelligence"
+    - "Bioengineering"
+    - "Biomedical Engineering"
+    - "Biophysics"
+    - "Biotechnology"
+    - "Computational Mathematics"
+    - "Computational Mechanics"
+    - "Computational Theory and Mathematics"
+    - "Computer Graphics and Computer-Aided Design"
+    - "Computer Science Applications"
+    - "Computer Science (miscellaneous)"
+    - "Computer Vision and Pattern Recognition"
+    - "Control and Optimization"
+    - "Control and Systems Engineering"
+    - "Decision Sciences (miscellaneous)"
+    - "Electrical and Electronic Engineering"
+    - "Engineering (miscellaneous)"
+    - "Hardware and Architecture"
+    - "Health Informatics"
+    - "Instrumentation"
+    - "Mathematical Physics"
+    - "Mechanical Engineering"
+    - "Modeling and Simulation"
+    - "Numerical Analysis"
+    - "Obstetrics and Gynecology"
+    - "Radiological and Ultrasound Technology"
+    - "Radiology, Nuclear Medicine and Imaging" 
+    - "Signal Processing"
+    - "Software"
+    - "Statistical and Nonlinear Physics"
+    - "Statistics, Probability and Uncertainty"
+    - "Theoretical Computer Science"
+    - "Multidisciplinary"
+  max_article_age_days: 31
+  
+filters:
+  title_keywords:
+    include:
+      # --- Mots-clés génériques traitement du signal ---
+      - 'signal'
+      - 'signal process(ing)?'
+      - 'digital'
+      - 'statistical'
+      - 'multidimensional'
+      - 'time[-\s]?series'
+      - 'discrete[-\s]?time'
+      - 'stochastic'
+      - 'spectral'
+      - 'spectrum'
+      - 'time[-–\s]?frequency'
+      - 'Fourier'
+      - 'short[-\s]?time'
+      - 'transform'
+      - '\bSTFT\b'
+      - 'Hilbert transform'
+      - 'wavelet'
+      - 'multiresolution'
+      - 'filter'
+      - '\bFIR\b'
+      - '\bIIR\b'
+      - 'adaptive filter(ing)?'
+      - 'Wiener'
+      - 'Kalman'
+      - 'particle filter'
+      - 'multirate'
+      - 'filter bank(s)?'
+      - 'subband'
+      - 'compress(ed|ive) sensing'
+      - 'sparse'
+      - 'dictionary learning'
+      - 'deconvolution'
+      - 'blind deconvolution'
+      - 'inverse problem(s)?'
+      - 'regularization'
+      - 'variational method(s)?'
+      - 'total variation'
+      - 'L1[-\s]?regularization'
+      - 'Bayesian (signal|estimation|inference)?'
+      - 'maximum likelihood'
+      - 'anomaly detection'
+      - 'state[-\s]?space'
+      - 'identification'
+      - '\bAR\b model'
+      - '\bARMA\b'
+      - '\bARIMA\b'
+      - '\bNARMA\b'
+      - '\bVolterra( series)?\b'
+      - '\bHammerstein\b'
+      - 'parametric spectral'
+      - 'nonparametric spectral'
+      # --- Traitement d’antenne / tableaux de capteurs (générique) ---
+      - 'array processing'
+      - 'sensor'
+      - '\bbeamform\w*\b'
+      - 'adaptive beamform\w*'
+      - '\bMIMO\b'
+      - 'space[-\s]?time'
+      - 'direction of arrival|DOA estimation'
+      - '\bMUSIC\b'
+      - '\bESPRIT\b'
+      - 'source localization'
+      - 'source separation'
+      - 'blind source separation|\bBSS\b'
+      - 'independent component analysis|\bICA\b'
+      - 'non[-\s]?negative matrix factorization|\bNMF\b'
+      # --- Traitement de signaux 1D par application ---
+      - 'audio'
+      - 'speech'
+      - 'biomedical'
+      - '\bECG\b'
+      - '\bEEG\b'
+      - '\bEMG\b'
+      - 'vibration'
+      - 'structural health monitoring|\bSHM\b'
+      - '\bNDT\b|non[-\s]?destructive testing'
+      - '\bradar\b'
+      - '\bsonar\b'
+      - 'communication'
+      - '\bwireless\b'
+      # --- Graph signal processing / signaux non euclidiens ---
+      - 'graph'
+      - 'manifold'
+      - 'geometric'
+      # --- IA & apprentissage pour signaux ---
+      - 'machine learning'
+      - 'classification'
+      - 'denoising'
+      - 'forecasting'
+      - 'deep learning'
+      - 'neural network(s)?'
+      - 'convolutional|\bCNN\b'
+      - 'recurrent|\bRNN\b'
+      - '\bLSTM\b'
+      - '\bGRU\b'
+      - 'transformer'
+      - 'attention mechanism'
+      - 'temporal convolutional|\bTCN\b'
+      - 'graph neural network|\bGNN\b'
+      - 'spatiotemporal neural network'
+      - 'autoencoder'
+      - 'variational autoencoder|\bVAE\b'
+      - 'generative model'
+      - 'generative adversarial network|\bGAN\b'
+      - 'self[-\s]?supervised learning'
+      - 'learning'
+      - 'few[-\s]?shot'
+      - 'transfer learning'
+      - 'physics[-\s]?informed neural network|\bPINN(s)?\b'
+      - 'model[-\s]?based deep learning'
+      - 'optimization'
+      # --- Interprétabilité & XAI pour signaux ---
+      - 'explainable|\bXAI\b'
+      - 'interpretabilit(y|ies)'
+      - 'saliency map'
+      - 'feature attribution'
+      - '\bGrad-?CAM\b'
+      - 'integrated gradients'
+      - '\bSHAP\b'
+      - '\bLIME\b'
+      - 'representation geometry'
+      - 'latent space'
+    exclude:
+      # --- Finance / économie / séries financières ---
+      - 'stock market'
+      - 'stock price'
+      - 'financial (time[-\s]?series|forecasting|prediction)'
+      - 'cryptocurrency'
+      - 'bitcoin'
+      - 'portfolio optimization'
+      - 'macroeconomic'
+      - 'forex'
+      # --- Biologie moléculaire / génétique / cellules ---
+      - 'gene expression'
+      - 'genomic(s)?'
+      - 'proteomic(s)?'
+      - 'protein structure'
+      - 'cellular signal(ing)?'
+      - 'cell culture'
+      - 'molecular biology'
+      - 'intracellular'
+      - 'biochemical pathway'
+      - 'metabolomic(s)?'
+      # --- Médecine clinique pure (hors signaux physiologiques) ---
+      - 'clinical trial'
+      - 'patient cohort'
+      - 'randomized controlled trial'
+
+
+llm:
+  domain_description: >
+    general signal processing and time-series analysis, including digital and statistical signal processing,
+    stochastic processes, spectral estimation, time–frequency and time–scale methods (Fourier, STFT, wavelets,
+    multiresolution, Hilbert transforms), filter design (FIR/IIR), adaptive filtering (Wiener, Kalman, particle filters),
+    multirate processing, filter banks and subband coding, compressive sensing and sparse representations, deconvolution
+    and inverse problems with variational and regularized approaches (L1, total variation, Bayesian methods).
+    The domain also covers array and sensor processing (array processing, DOA, MUSIC/ESPRIT, MIMO, source separation,
+    BSS/ICA/NMF), as well as application-driven signal processing for audio, speech, biomedical signals, radar/sonar,
+    communications, structural health monitoring and sensor networks. It includes modern topics such as graph signal
+    processing (signals on graphs, graph filters, graph Fourier transforms) and machine learning for signals: deep neural
+    networks (CNN, RNN/LSTM/GRU, TCN, transformers, GNNs), self-supervised and contrastive learning, representation
+    learning and model-based or physics-informed deep learning for denoising, detection, classification and forecasting
+    of signals. Finally, it encompasses interpretability and explainable AI techniques applied to signal models
+    (XAI, saliency, Grad-CAM, SHAP, latent space analysis, representation geometry).
+  relevance_threshold: 0.75
+  model_name: "all-MiniLM-L12-v2"
+
+
+pubmed:
+  api_key: ""
+  email: "your.email@example.org"

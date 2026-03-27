@@ -1,0 +1,189 @@
+journals:
+  categories:
+    - "Acoustics and Ultrasonics"
+    - "Applied Mathematics"
+    - "Artificial Intelligence"
+    - "Bioengineering"
+    - "Biomedical Engineering"
+    - "Biophysics"
+    - "Biotechnology"
+    - "Computational Mathematics"
+    - "Computational Mechanics"
+    - "Computational Theory and Mathematics"
+    - "Computer Graphics and Computer-Aided Design"
+    - "Computer Science Applications"
+    - "Computer Science (miscellaneous)"
+    - "Computer Vision and Pattern Recognition"
+    - "Control and Optimization"
+    - "Control and Systems Engineering"
+    - "Decision Sciences (miscellaneous)"
+    - "Electrical and Electronic Engineering"
+    - "Engineering (miscellaneous)"
+    - "Hardware and Architecture"
+    - "Health Informatics"
+    - "Instrumentation"
+    - "Mathematical Physics"
+    - "Mechanical Engineering"
+    - "Modeling and Simulation"
+    - "Numerical Analysis"
+    - "Obstetrics and Gynecology"
+    - "Radiological and Ultrasound Technology"
+    - "Radiology, Nuclear Medicine and Imaging" 
+    - "Signal Processing"
+    - "Software"
+    - "Statistical and Nonlinear Physics"
+    - "Statistics, Probability and Uncertainty"
+    - "Theoretical Computer Science"
+    - "Multidisciplinary"
+  max_article_age_days: 31
+
+filters:
+  title_keywords:
+    include:
+      # --- Cardio monitoring: ECG, PPG, HRV ---
+      - 'photoplethysmograph(y|ic)'
+      - '\bPPG\b'
+      - 'remote photoplethysmograph(y|ic)|\brPPG\b'
+      - 'imaging photoplethysmograph(y|ic)|\biPPG\b'
+      - 'heart rate( monitoring)?'
+      - 'pulse rate'
+      - 'heart rate variability|\bHRV\b'
+      - 'pulse transit time|\bPTT\b'
+      - 'pulse wave (analysis|velocity)|\bPWV\b'
+      - 'blood pressure estimation'
+      - 'cuffless blood pressure'
+      - 'non[-\s]?invasive blood pressure'
+      # --- Respiratory monitoring ---
+      - 'respiratory'
+      - 'respiration'
+      - 'breathing'
+      - 'respiratory inductance plethysmograph(y|ic)|\bRIP\b'
+      - 'acoustic'
+      - 'radar'
+      - 'impedance pneumograph(y|ic)'
+      # --- Acoustic biomedical signals (cardiac, lung, bowel) ---
+      - 'phonocardiograph(y|ic)|\bPCG\b'
+      - 'heart sound(s)?'
+      - 'S1 ?S2 detection'
+      - 'lung sound(s)?'
+      - 'respiratory sound(s)?'
+      - 'bowel sound(s)?'
+      - 'abdominal sound(s)?'
+      - 'acoustic'
+      # --- Sleep monitoring ---
+      - 'sleep'
+      - 'sleep staging'
+      - 'apnea'
+      - 'polysomnograph(y|ic) alternative'
+      - 'wearable'
+      # --- Motion / activity monitoring ---
+      - 'motion'
+      - 'gait'
+      - 'locomotion'
+      - 'activity recognition'
+      - 'human activity|\bHAR\b'
+      - 'fall detection'
+      - 'movement'
+      - '\baccelerometer(s)?\b'
+      - '\bgyroscope(s)?\b'
+      - '\bIMU\b|inertial measurement unit'
+      # --- Pelvic floor / bladder / bowel monitoring (non-invasive) ---
+      - 'urination '
+      - 'micturition'
+      - 'voiding'
+      - 'bladder'
+      - 'defecation'
+      - 'bowel movement'
+      - 'gastrointestinal sound(s)?|\bGI sounds?\b'
+      # --- Cardiovascular risk / stroke prevention ---
+      - 'cardiovascular'
+      - 'cardiovascular risk assessment'
+      - 'stroke risk prediction'
+      - 'cerebrovascular'
+      # --- Multimodal sensor fusion ---
+      - 'multimodal physiological'
+      - 'wearable sensor(s)?'
+      - 'wearable'
+      - 'bio(signal|signals)'
+      - 'biomedical signal'
+      - 'vital sign(s)?'
+      - 'continuous monitoring'
+      - 'remote health'
+      - 'telemedicine'
+      # --- Signal processing techniques for biomedical signals ---
+      - 'denois(ing|e)'
+      - 'artifact removal'
+      - 'motion artifact reduction'
+      - 'adaptive filtering'
+      - 'Kalman filtering'
+      - 'blind source separation|\bICA\b'
+      - 'time[-\s]?frequency analysis'
+      - 'spectral'
+      - 'spectrum'
+      - 'state estimation'
+      - 'peak detection'
+      - 'event detection'
+      - 'inverse problem(s)?'
+      - 'feature extraction'
+      - 'HRV analysis'
+      # --- Machine learning for biomedical monitoring ---
+      - 'machine learning'
+      - 'deep learning'
+      - 'neural network'
+      - 'CNN'
+      - 'RNN'
+      - 'transformer biomedical'
+      - 'self[-\s]?supervised (biomedical|physiological)'
+      - 'contrastive learning bio(signal|signals)'
+      - 'multimodal fusion neural network'
+    exclude:
+      # --- Tout ce qui est invasif ou implantable ---
+      - 'implant(able)?'
+      - 'pacemaker'
+      - 'cardiac catheter'
+      - 'stent(s)?'
+      - 'surg(ery|ical)'
+      - 'invasive blood pressure'
+      - 'arterial line'
+      - 'catheter(ization)?'
+      # --- Imagerie médicale lourde non liée au monitoring continu ---
+      - '\bMRI\b'
+      - '\bCT\b( scan)?|computed tomography'
+      - 'ultrasound imaging'        # imagerie pure, pas monitoring
+      - 'PET imaging'
+      - 'mammograph(y|ic)'
+      # --- Biomol, génétique, cellulaire ---
+      - 'biomarker discovery'
+      - 'molecular'
+      - 'cellular'
+      - 'gene expression'
+      - 'protein expression'
+      # --- Thèmes non pertinents dans le monitoring physiologique ---
+      - 'robotic surgery'
+      - 'bioinformatics'
+      - 'drug delivery'
+      - 'chemotherapy'
+      - 'oncology'
+      - 'nanoparticle(s)?'
+      - 'biomechanics finite element'
+      - 'BOLD ?fMRI'
+
+llm:
+  domain_description: >
+    Non-invasive biomedical monitoring using optical, acoustic, inertial, and physiological sensing techniques.
+    The domain focuses on photoplethysmography (PPG, rPPG), ECG and heart sound monitoring (PCG), respiratory monitoring,
+    non-invasive blood pressure estimation (cuffless BP, PTT/PWV), sleep analysis, acoustic monitoring of lung and bowel
+    sounds, and human activity/motion detection using IMU and wearable sensors. Specific applications include early
+    cardiovascular risk detection, stroke prevention, sleep disorders, bladder/bowel monitoring, and daily-life functional
+    monitoring (gait, movement, falls). Signal processing includes denoising, artifact reduction, adaptive filtering,
+    spectral/time-frequency analysis, event detection, state estimation, and multimodal sensor fusion. Modern AI
+    techniques (CNN, RNN/LSTM, transformers, self-supervised and contrastive learning) for physiological signal extraction,
+    reconstruction, segmentation, and prediction are part of the domain. Invasive, implantable, surgical, genetic and
+    molecular approaches are explicitly excluded.
+  relevance_threshold: 0.75
+  model_name: "all-MiniLM-L12-v2"
+
+
+pubmed:
+  api_key: ""
+  email: "your.email@example.org"

@@ -1,0 +1,214 @@
+journals:
+  categories:
+    - "Acoustics and Ultrasonics"
+    - "Applied Mathematics"
+    - "Artificial Intelligence"
+    - "Atomic and Molecular Physics, and Optics"
+    - "Computational Mathematics"
+    - "Computational Mechanics"
+    - "Computational Theory and Mathematics"
+    - "Computer Graphics and Computer-Aided Design"
+    - "Computer Science Applications"
+    - "Computer Science (miscellaneous)"
+    - "Computer Vision and Pattern Recognition"
+    - "Computers in Earth Sciences"
+    - "Control and Optimization"
+    - "Control and Systems Engineering"
+    - "Decision Sciences (miscellaneous)"
+    - "Earth and Planetary Sciences (miscellaneous)"
+    - "Electrical and Electronic Engineering"
+    - "Engineering (miscellaneous)"
+    - "Hardware and Architecture"
+    - "Geophysics"
+    - "Geotechnical Engineering and Engineering Geology"
+    - "Instrumentation"
+    - "Mathematical Physics"
+    - "Mechanical Engineering"
+    - "Modeling and Simulation"
+    - "Numerical Analysis"
+    - "Signal Processing"
+    - "Software"
+    - "Space and Planetary Science"
+    - "Statistical and Nonlinear Physics"
+    - "Statistics, Probability and Uncertainty"
+    - "Theoretical Computer Science"
+    - "Multidisciplinary"
+  max_article_age_days: 31
+  
+filters:
+  title_keywords:
+    include:
+      # --- Instrumentation optique générale ---
+      - 'optical'
+      - 'instrument(ation)?'
+      - 'sensor(s)?'
+      - '\blaser\b'
+      - 'photonic(s)?'
+      - 'interferometr(y|ic)'
+      # --- Interférométrie déplacement/vibration ---
+      - 'interferometer'
+      - 'heterodyne'
+      - 'homodyne'
+      - 'Fabry[-\s]?Perot'
+      - 'Michelson'
+      - 'Mach[-\s]?Zehnder'
+      - 'speckle'
+      - 'holography'
+      - 'vibrometr(y|ic)'
+      - '\bLDV\b'
+      - 'Doppler'
+      # --- Self-Mixing Interferometry (SMI) ---
+      - 'self[-\s]?mixing'
+      - '\bOFI\b'
+      # --- Mesures déplacement/vitesse/accélération ---
+      - 'displacement (measurement|sensor)'
+      - 'velocimetr(y|ic)'
+      - 'velocity'
+      - 'vibration'
+      - 'accelerometer'
+      - 'inertial'
+      # --- Déformations / strain / stress / SHM ---
+      - 'strain'
+      - 'stress'
+      - 'structural strain monitoring'
+      - 'structural health monitoring|SHM'
+      # --- Capteurs fibre optique & interrogateurs ---
+      - 'fiber optic|fibre optic'
+      - 'Bragg'
+      - 'distributed acoustic sensing|\bDAS\b'
+      - 'distributed fiber sensing'
+      - 'Rayleigh scattering'
+      - 'Brillouin scattering'
+      - 'Raman scattering'
+      - 'optical frequency domain reflectometr(y|ic)|\bOFDR\b'
+      - '(phi|phase)[-\s]?OTDR'
+      - 'optical interrogator'
+      # --- Inclinaison / Tilt ---
+      - 'inclinometer'
+      - 'tilt'
+      - 'inclination'
+      # --- Métrologie laser et stabilité ---
+      - 'laser stabilization'
+      - 'frequency stabilization'
+      - 'optical metrolog(y|ic)'
+      # --- Traitement du signal pour l’instrumentation optique ---
+      - 'demodulation'
+      - 'unwrapping'
+      - 'phase'
+      - 'fringe'
+      - 'coherent'
+      - 'lock[-\s]?in detection'
+      - 'adaptive'
+      - 'Kalman'
+      - 'state estimation'
+      - 'identification'
+      - 'inverse problem(s)?'
+      - 'estimation'
+      - 'seismic'
+      # --- Contrôle / régulation optique ---
+      - 'instrument'
+      - 'closed[-\s]?loop'
+      - 'feedback'
+      - 'laser'
+      - 'actuator'
+      - 'servo control'
+      - 'PID'
+      - 'temperature stabilization'
+      - 'optical alignment'
+      # --- Applications géosciences / sismologie / planétologie ---
+      - 'seismolog(y|ical)'
+      - 'seismometer'
+      - 'geophone'
+      - 'volcano'
+      - 'volcanolog(y|ical)'
+      - 'geophysical'
+      - 'planetary'
+      - 'geophysics'
+      - 'instrument(ation)?'
+      - 'in[-\s]?situ planetary'
+      - 'Mars'
+      - 'lunar'
+      - 'geodesy'
+      - 'tectonic'
+      - 'microseismic'
+      - 'low[-\s]?noise'
+      - 'broadband'
+      # --- IA & traitement automatique pour instrumentation optique ---
+      - 'machine learning'
+      - 'denois(ing|e)'
+      - 'reconstruction'
+      - 'deep learning'
+      - 'fiber optic'
+      - 'physics[-\s]?informed neural network|\bPINN(s)?\b'
+      - 'model[-\s]?based'
+      - 'self[-\s]?supervised'
+    exclude:
+      # --- Optique non instrumentale / photonics non liés à la mesure ---
+      - 'nanophotonic(s)?'
+      - 'plasmonic(s)?'
+      - 'optical tweezers'
+      - 'optical trapping'
+      - 'optical levitation'
+      - 'nonlinear optics'        # trop large, 99% hors capteurs
+      - 'photonic crystal'
+      - 'metasurface'
+      - 'metamaterial'
+      # --- Imagerie optique non instrumentale ---
+      - 'fluorescence imaging'
+      - 'optical microscopy'
+      - 'confocal microscopy'
+      - 'two[-\s]?photon microscopy'
+      - 'super[-\s]?resolution microscopy'
+      # --- Biologie / biomoléculaire ---
+      - 'cell imaging'
+      - 'cellular imaging'
+      - 'biomarker'
+      - 'protein'
+      - 'gene expression'
+      - 'biochemistry'
+      - 'cell culture'
+      # --- Matériaux / chimie hors capteurs optiques ---
+      - 'nanoparticle(s)?'
+      - 'nanotube(s)?'
+      - 'perovskite'
+      - 'polymer synthesis'
+      - 'thin film deposition'
+      - 'photocatalys(is|tic)'
+      # --- Laser non applicatif (purement sources/physique) ---
+      - 'quantum cascade laser'
+      - 'mode[-\s]?locking'
+      - 'supercontinuum generation'
+      # --- IA non reliée à l’optique ---
+      - 'computer vision'
+      - 'object detection'
+      - 'image segmentation'
+      - 'semantic segmentation'
+      - 'video recognition'
+      - '\bNLP\b|natural language processing'
+      - '\bLLM\b'
+      # --- Robotique / contrôle non lié aux capteurs optiques ---
+      - 'robotic arm'
+      - 'mobile robot'
+      - 'autonomous driving'
+      - 'SLAM'
+
+llm:
+  domain_description: >
+    Optical instrumentation for measuring displacement, velocity, acceleration, strain/stress and tilt using
+    interferometry (Michelson, Fabry–Perot, heterodyne/homodyne, self-mixing), fiber-optic sensors (FBG, Rayleigh/
+    Brillouin/Raman scattering, DAS/DTS, OFDR, phi-OTDR), optical inertial sensors, and laser-based metrology systems.
+    The domain covers instrumentation design, laser stabilization, interrogation techniques, closed-loop control of
+    optical systems, temperature and alignment stabilization, as well as advanced signal processing for interferometric
+    demodulation (phase retrieval, quadrature demodulation, heterodyne detection, fringe analysis, Kalman filtering,
+    inverse problems, model-based estimation). Applications include geosciences and planetary exploration: optical
+    seismometry, volcanic monitoring, geophysical deformation measurement, tectonic strain, planetary seismometers
+    and in-situ optical instrumentation for planetary missions. Modern approaches involving machine learning, deep
+    learning, self-supervised and physics-informed models for optical signal reconstruction, denoising and feature
+    extraction are also included.
+  relevance_threshold: 0.75
+  model_name: "all-MiniLM-L12-v2"
+
+
+pubmed:
+  api_key: ""
+  email: "your.email@example.org"

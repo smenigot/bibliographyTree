@@ -1,0 +1,192 @@
+journals:
+  categories:
+    - "Acoustics and Ultrasonics"
+    - "Applied Mathematics"
+    - "Artificial Intelligence"
+    - "Bioengineering"
+    - "Biomedical Engineering"
+    - "Biophysics"
+    - "Biotechnology"
+    - "Computational Mathematics"
+    - "Computational Mechanics"
+    - "Computational Theory and Mathematics"
+    - "Computer Graphics and Computer-Aided Design"
+    - "Computer Science Applications"
+    - "Computer Science (miscellaneous)"
+    - "Computer Vision and Pattern Recognition"
+    - "Control and Optimization"
+    - "Control and Systems Engineering"
+    - "Decision Sciences (miscellaneous)"
+    - "Electrical and Electronic Engineering"
+    - "Engineering (miscellaneous)"
+    - "Hardware and Architecture"
+    - "Health Informatics"
+    - "Instrumentation"
+    - "Mathematical Physics"
+    - "Mechanical Engineering"
+    - "Modeling and Simulation"
+    - "Numerical Analysis"
+    - "Obstetrics and Gynecology"
+    - "Radiological and Ultrasound Technology"
+    - "Radiology, Nuclear Medicine and Imaging" 
+    - "Signal Processing"
+    - "Software"
+    - "Statistical and Nonlinear Physics"
+    - "Statistics, Probability and Uncertainty"
+    - "Theoretical Computer Science"
+    - "Multidisciplinary"
+  max_article_age_days: 31
+
+filters:
+  title_keywords:
+    include:
+      # --- Ultrasons (générique, imagerie, écho) ---
+      - '\bultrasound(s)?\b'
+      - '\bultrasonic(s)?\b'
+      - 'ultrasound imaging'
+      - 'ultrasonic imaging'
+      - 'echograph\w*'                # echography, echographic...
+      # --- Beamforming & acquisitions avancées ---
+      - 'beamform\w*'                  # beamform, beamforming, beamformer…
+      - 'synthetic aperture'
+      - '\bSAFT\b'
+      - '\bTFM\b'
+      - 'Total Focusing Method'
+      - '\bFMC\b'
+      - 'Full Matrix Capture'
+      - 'coherent compound\w*'
+      - 'plane[-\s]?wave'
+      - 'delay[-\s]?and[-\s]?sum'
+      - 'minimum[-\s]?variance'
+      - 'Capon'
+      - 'adaptive beamform\w*'
+      # --- Imagerie non linéaire / harmonique ---
+      - 'harmonic imaging'
+      - 'tissue harmonic'
+      - 'superharmonic'
+      - 'subharmonic'
+      - 'nonlinear ultrasound'
+      - 'nonlinear (acoustic[\s-]+)?imaging'
+      # --- Coded excitation ---
+      - 'Golay code(s)?'
+      - '\bchirp(ed)?\b'
+      - 'pulse compression'
+      - 'matched filter(ing)?'
+      - 'coded'
+      # --- Time reversal ---
+      - 'time[-\s]?reversal'
+      - '\bTR imaging\b'
+      # --- Harmonic extraction / modèles non linéaires ---
+      - '\bVolterra( series)?\b'
+      - '\bHammerstein\b'
+      - 'Wiener.?Hammerstein'
+      - 'nonlinear system identification'
+      - 'harmonic extraction'
+      - 'nonlinear acoustic model(ing)?'
+      # --- Doppler / microemboles ---
+      - 'doppler'
+      - 'doppler( ultrasound| imaging)?'
+      - 'spectral doppler'
+      - 'color doppler'
+      - 'power doppler'
+      - 'vector flow imaging'
+      - 'velocity estimation'
+      - 'micro[-\s]?emboli'
+      - 'embol(i|us) detection'
+      - 'ultrasound doppler signal'
+      # --- Simulation propagation ---
+      - 'wave propagation'
+      - 'acoustic propagation'
+      - 'acoustic field simulation'
+      - 'ultrasound simulation'
+      - '\bk-?wave\b'
+      - '\bFDTD\b'
+      - 'finite[-\s]?difference time[-\s]?domain'
+      - 'finite element(s)?'
+      - 'FEM acoustics'
+      - 'pressure field'
+      - 'ultrasound scattering'
+      - 'nonlinear acoustic propagation'
+      # --- IA pour les ultrasons / reconstruction / beamforming ---
+      - 'ultrasound deep learning'
+      - 'ultrasound image(s)?'
+      - 'reconstruction'
+      - '(denoising|deconvolution)'
+      - 'super[-\s]?resolution'
+      - 'localization microscopy'
+      - 'learned beamforming'
+      # --- Mots-clés IA / signal génériques (laisser large, 2ᵉ filtre LLM derrière) ---
+      - 'deep learning'
+      - 'machine learning'
+      - 'neural network(s)?'
+      - '\bCNN\b'
+      - '\bU-?net\b'
+      - '\bRNN\b'
+      - '\bLSTM\b'
+      - '\bGRU\b'
+      - 'transformer'
+      - 'attention mechanism'
+      - 'graph neural network(s)?|\bGNN\b'
+      - 'Fourier neural operator|\bFNO\b'
+      - 'neural'
+      - 'multilayer perceptron|\bMLP\b'
+      - 'perceptron'
+      - 'convolutional'
+      - 'recurrent'
+      # --- Physics-guided / modèles avancés ---
+      - 'physical'
+      - 'physic'
+      - 'physics'
+      - 'physics[-\s]?informed neural network(s)?'
+      - '\bPINN(s)?\b'
+      - 'model[-\s]?based deep learning'
+      - 'unrolled optimization'
+      - 'data[-\s]?driven (ultrasound|acoustic) inversion'
+      # --- Auto-supervisé / contrastif ---
+      - 'self[-\s]?supervised learning'
+      - 'contrastive learning'
+      - 'representation learning'
+      # --- Interprétabilité / XAI (générique) ---
+      - 'interpretabilit(y|ies)'
+      - 'explainabilit(y|ies)'
+      - 'explainable AI|\bXAI\b'
+      - 'mechanistic interpretability'
+      - 'activation patching'
+      - 'causal tracing'
+      - 'feature attribution'
+      - 'representation geometry'
+      - 'latent space analysis'
+      - 'saliency map'
+      - 'integrated gradients'
+      - '\bGrad-?CAM\b'
+      - '\bSHAP\b'
+      - '\bLIME\b'
+
+    exclude:
+      # --- Applications très cliniques / thérapeutiques qu'on peut vouloir ignorer au 1er passage ---
+      - 'high[-\s]?intensity focused ultrasound|\bHIFU\b'
+      - 'ultrasound[-\s]?guided (surgery|biopsy|ablation|injection)'
+      - 'therapeutic ultrasound|ultrasound therapy'
+      - 'ultrasound[-\s]?assisted (drug delivery|chemotherapy|thrombolysis)'
+      - 'cosmetic ultrasound|aesthetic ultrasound'
+
+llm:
+  domain_description: >
+    ultrasound imaging reconstruction; advanced beamforming (FMC, TFM, Full Matrix Capture, Total Focusing Method,
+    synthetic aperture, SAFT, coherent compounding, plane-wave imaging); harmonic and nonlinear ultrasound imaging
+    (tissue harmonic, superharmonic, subharmonic); time-reversal imaging; coded excitation and excitation optimization
+    (Golay codes, chirps, pulse compression, matched filtering, genetic algorithms); nonlinear system modeling for
+    harmonic extraction (Volterra series, Hammerstein, Wiener–Hammerstein, nonlinear system identification);
+    Doppler signal processing (spectral/color/power Doppler, vector flow imaging, velocity estimation, micro-emboli
+    and embolus detection, operator-independent Doppler monitoring); ultrasound wave and acoustic field propagation
+    simulation (k-Wave, FDTD, finite elements/FEM acoustics, scattering simulation, nonlinear propagation);
+    AI for ultrasound (deep learning, CNN, U-Net, learned beamforming, ultrasound reconstruction, super-resolution
+    ultrasound, segmentation); physics-guided and model-based machine learning (PINNs, neural operators, FNO,
+    self-supervised and contrastive learning); interpretability and explainable AI in physics (XAI, saliency, Grad-CAM, SHAP,
+    latent space analysis, representation geometry).
+  relevance_threshold: 0.75
+  model_name: "all-MiniLM-L12-v2"
+
+pubmed:
+  api_key: ""
+  email: "your.email@example.org"

@@ -1,0 +1,183 @@
+journals:
+  categories:
+    - "Applied Psychology"
+    - "Artificial Intelligence"
+    - "Behavioral Neuroscience"
+    - "Cognitive Neuroscience"
+    - "Education"
+    - "E-learning"
+    - "Engineering (miscellaneous)"
+    - "Psychology (miscellaneous)"
+    - "Social Sciences (miscellaneous)"
+    - "Social Work"
+    - "Multidisciplinary"
+  max_article_age_days: 31
+
+filters:
+  title_keywords:
+    include:
+      # --- Pédagogie générale ---
+      - '\bpedagog(y|ies)\b'
+      - 'teaching practice(s)?'
+      - 'teaching'
+      - 'effectiveness'
+      - 'higher education'
+      - 'university'
+      - 'engineering education'
+      - '\bSTEM education\b'
+      - 'active learning'
+      - 'student[-\s]?centered learning'
+      - 'learner[-\s]?centered'
+      - 'constructivist learning'
+      - 'instructional'
+      - 'learning design'
+      # --- Apprentissage & cognition ---
+      - 'learning strateg(y|ies)'
+      - 'deep learning'   # sens pédagogique, pas IA
+      - '\bmetacognition\b|\bmetacognitive\b'
+      - 'self[-\s]?regulated learning'
+      - 'cognitive psychology'
+      - 'cognitive load( theory)?'
+      - 'retrieval practice'
+      - 'spaced repetition|spaced learning'
+      - 'memory retention'
+      - 'memorization'
+      - 'working memory'
+      - 'long[-\s]?term memory'
+      - 'efficiency'
+      # --- Motivation & engagement ---
+      - 'engagement'
+      - 'student'
+      - 'motivation|academic motivation'
+      - 'self[-\s]?determination theory'
+      - 'intrinsic motivation'
+      - 'extrinsic motivation'
+      # --- Approche par projet / par compétences ---
+      - 'project[-\s]?based learning|\bPBL\b'
+      - 'problem[-\s]?based learning'
+      - 'competenc(y|ies)[-\s]?based education'
+      - 'competenc(y|ies)[-\s]?based assessment'
+      - 'competenc(y|ies) framework(s)?'
+      - 'experiential learning'
+      - 'work[-\s]?integrated learning'
+      - 'authentic learning task(s)?'
+      # --- Biais cognitifs & erreurs d’apprentissage ---
+      - 'cognitive bias(es)?'
+      - 'misconception(s)?'
+      - 'learning misconception(s)?'
+      - 'misunderstanding(s)?'
+      - 'bias(es)?'
+      - 'metacognitive'
+      - 'illusion'
+      - 'competence'
+      - 'overconfidence'
+      # --- Évaluation, feedback, réussite étudiante ---
+      - 'assessment in higher education'
+      - 'formative assessment'
+      - 'summative assessment'
+      - 'feedback for learning'
+      - 'feedback literac(y|ies)'
+      - 'rubric(s)?'
+      - 'grading practice(s)?'
+      - 'evaluation method(s)?'
+      - 'student success'
+      - 'academic success'
+      - 'student performance'
+      - 'learning outcome(s)?'
+      # --- Bien-être étudiant / psychologie positive ---
+      - 'student wellbeing|student well[-\s]?being'
+      - 'student mental health'
+      - 'academic stress'
+      - 'burnout'
+      - 'flourishing'
+      - 'belongingness'
+      - 'campus wellbeing|campus well[-\s]?being'
+      # --- Vie étudiante / facteurs sociaux ---
+      - 'student life'
+      - 'campus life'
+      - 'social support'
+      - 'peer learning'
+      - 'collaborative learning'
+      - 'group learning'
+      - 'peer instruction'
+      - 'mentoring'
+      # --- Transition pédagogique & numérique ---
+      - 'digital learning'
+      - 'blended learning'
+      - 'hybrid learning'
+      - 'online learning'
+      - 'learning analytics'
+      - 'educational data mining'
+      - 'adaptive learning'
+      - 'AI'
+      - 'intelligent tutoring'
+      # --- Développement professionnel enseignant ---
+      - 'faculty development'
+      - 'teacher training'
+      - 'instructional coaching'
+      - 'teaching improvement'
+      - 'professional development in higher education'
+      # --- Genre, diversité, inclusion en enseignement supérieur / ingénierie ---
+      - 'women in engineering'
+      - 'female engineering student(s)?'
+      - 'gender gap'
+      - 'gender imbalance'
+      - 'STEM'
+      - 'gender (equity|equality)'
+      - 'gender stereotype(s)?'
+      - 'underrepresented (group|groups)'
+      - 'underrepresentation of women'
+      - 'women participation'
+      - 'female retention'
+      - 'gender[-\s]?inclusive'
+      - 'inclusive pedagogy'
+      - 'diversity and inclusion'
+      - 'sense of belonging'
+      - 'belonging of women'
+    exclude:
+      # --- Domaines non pertinents (pré-bac) ---
+      - 'primary school'
+      - 'elementary school'
+      - 'kindergarten'
+      - '\bK-?12\b'
+      - 'early childhood education'
+      - 'child development'
+      # --- Psychologie clinique (hors champ pédagogique) ---
+      - 'clinical psychology'
+      - 'depression (treatment|therapy)'
+      - 'anxiety disorder'
+      - 'psychotherapy'
+      - '\bADHD\b'
+      - 'autism spectrum'
+      - 'mental illness'
+      # --- Politiques publiques ou macro-économie de l’éducation ---
+      - 'education policy'
+      - 'education economics'
+      - 'school governance'
+      - 'teacher union(s)?'
+      - 'education reform'
+      - 'curriculum reform'
+      # --- Domaines trop éloignés du supérieur technique ---
+      - 'nursing education'
+      - 'medical residency'
+      - 'K-?12 STEM'
+
+llm:
+  domain_description: >
+    Research in pedagogy, learning sciences, higher education and engineering education, including cognitive
+    psychology applied to learning, metacognition, cognitive load theory, learning strategies, memory consolidation,
+    retrieval practice, spaced learning, and student motivation. The domain includes active learning, project-based
+    and problem-based learning, competency-based education, assessment and feedback practices, student engagement,
+    well-being, and academic success. It also covers teaching practices in engineering schools, instructional design,
+    digital and hybrid learning environments, learning analytics, and faculty development. A specific focus is placed
+    on gender, diversity and inclusion in STEM and engineering: women in engineering, gender gaps and imbalance,
+    underrepresentation of women and other groups, inclusive pedagogy, sense of belonging, and initiatives to improve
+    recruitment, retention and success of female engineering students. Non-relevant domains such as clinical psychology,
+    early childhood education, invasive mental health studies, and general AI unrelated to education are excluded.
+  relevance_threshold: 0.75
+  model_name: "all-MiniLM-L12-v2"
+
+
+pubmed:
+  api_key: ""
+  email: "your.email@example.org"
